@@ -16,10 +16,7 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin(origins = {
-    "http://localhost:5173",  // Vite default dev server
-    "http://127.0.0.1:5173",
-})
+
 @RequiredArgsConstructor
 public class GenerationController {
 
