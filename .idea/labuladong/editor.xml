@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditorlabuladong">
+    <option name="projectConfig">
+      <map>
+        <entry key="$USER_HOME$/Documents/leetcode/leetcode-problems/src/leetcode/editor/en/[3539]Find Sum of Array Product of Magical Sequences.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/leetcode/leetcode-problems/src/leetcode/editor/en/doc/content/[3539]Find Sum of Array Product of Magical Sequences.md" />
+              <option name="frontendQuestionId" value="leetcode.com3539" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$USER_HOME$/Documents/leetcode/leetcode-problems/src/leetcode/editor/en/[3539]Find Sum of Array Product of Magical Sequences.java" />
+              <option name="titleSlug" value="find-sum-of-array-product-of-magical-sequences" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
