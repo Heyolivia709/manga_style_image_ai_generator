@@ -4,10 +4,7 @@ import Spinner from "./Spinner.jsx";
 import {Download, FileText, PlusCircle} from "lucide-react";
 import MangaStyleDropdown from "./MangaStyleDropdown.jsx";
 
-const BASE_URL = import.meta.env.PROD
-    ? 'https://manga-style-image-ai-generator.onrender.com'
-    : 'http://localhost:8080';
-
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const TextToImageSection = () => {
 
@@ -32,7 +29,9 @@ const TextToImageSection = () => {
         const payload = {prompt, style};
 
         try {
-            const API_URL = '${BASE_URL}/api/v1/generate-from-text';
+            const API_URL = `${BASE_URL}/api/v1/generate-from-text`;
+            console.log("API_URL =", API_URL)
+
             const response = await fetch(API_URL, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},

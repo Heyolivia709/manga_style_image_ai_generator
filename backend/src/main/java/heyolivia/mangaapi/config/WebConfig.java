@@ -18,6 +18,7 @@ public class WebConfig {
                         "http://localhost:5173",
                         "http://127.0.0.1:5173",
                         "https://heyolivia709.github.io", // GitHub Pages
+                        "https://heyolivia709.github.io/manga_style_image_ai_generator",
                         "https://manga-style-image-ai-generator.onrender.com" // Render backend self domain
                     )
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")

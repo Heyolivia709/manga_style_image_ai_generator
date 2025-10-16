@@ -4,9 +4,7 @@ import ErrorMessage from "./ErrorMessage.jsx";
 import {useCallback, useRef, useState} from "react";
 import {Download, PlusCircle} from "lucide-react";
 
-const BASE_URL = import.meta.env.PROD
-    ? 'https://manga-style-image-ai-generator.onrender.com'
-    : 'http://localhost:8080';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const PhotoToImageSection = () => {
     const [uploadedImage, setUploadedImage] = useState(null);
@@ -49,7 +47,7 @@ const PhotoToImageSection = () => {
         formData.append("prompt", prompt);
 
         try {
-            const API_URL = '${BASE_URL}/api/v1/generate';
+            const API_URL = `${BASE_URL}/api/v1/generate`;
             const response = await fetch(API_URL, {
                 method: 'POST',
                 body: formData,

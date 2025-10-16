@@ -91,15 +91,17 @@ public class MangaArtService {
                 + "vivid colors, expressive characters, dynamic motion, cinematic lighting, "
                 + "detailed backgrounds, drawn by manga artist, vibrant shonen art aesthetic.";
 
-            // 5️⃣ 模型与风格
+
             String engineId = "stable-diffusion-xl-1024-v1-0";
+//            String engineId = "stable-diffusion-v1-5";
+
             String stylePreset = "anime";
 
 //            TextToImageRequest request = new TextToImageRequest(finalPrompt, stylePreset);
 //            request.setWidth(1024);
 //            request.setHeight(1024);
 
-            // 6️⃣ 调用 Stability API
+
             return stabilityAIClient.generateImageFromImage(
                 "Bearer " + apiKey,
                 engineId,
